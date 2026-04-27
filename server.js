@@ -67,7 +67,7 @@ app.get("/result", async (req, res) => {
 });
 
 // ✅ PORT FIX
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
     console.log(`🔥 Server running on port ${PORT}`);
