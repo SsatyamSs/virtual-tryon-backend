@@ -69,6 +69,6 @@ app.get("/result", async (req, res) => {
 // ✅ PORT FIX
 const PORT = process.env.PORT;
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0" , () => {
     console.log(`🔥 Server running on port ${PORT}`);
 }); 
